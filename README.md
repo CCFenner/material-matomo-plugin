@@ -57,6 +57,8 @@ Ratings will be shown in the **Goal Conversions** section at the very bottom of 
 
 You can click on a specific “goal” to filter your dashboard by it. For example, if you filter by the `Feedback: bad` goal, you can see which pages need the most attention in the **Top Pages** section.
 
+[Live demo](https://plausible.aedge.dev/material-plausible-plugin.ale.sh/)
+
 
 ## License
 
