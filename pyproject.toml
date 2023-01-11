@@ -42,3 +42,9 @@ path = "material_plausible/__about__.py"
 
 [tool.hatch.envs.default]
 path = ".venv"
+
+[tool.hatch.build.targets.wheel]
+include = ["/material_plausible"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/material_plausible"]
