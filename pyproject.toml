@@ -7,7 +7,7 @@ name = "material-plausible-plugin"
 description = "Plausible Analytics implementation for Material for MkDocs"
 readme = "README.md"
 requires-python = ">=3.7"
-license = "MIT"
+license = "ISC"
 keywords = []
 authors = [
   { name = "Alexander Pushkov", email = "alexander@notpushk.in" },
