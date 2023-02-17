@@ -9,6 +9,14 @@
 
   /* Register event handlers after documented loaded */
   document.addEventListener("DOMContentLoaded", function () {
+    /* Set up search tracking */
+    if (document.forms.search) {
+      var query = document.forms.search.query;
+      query.addEventListener("blur", function() {
+        if (this.value) plausible("Search", { props: { search_term: this.value } });
+      })
+    }
+
     /* Set up feedback, i.e. "Was this page helpful?" */
     document$.subscribe(function () {
       var feedback = document.forms.feedback;

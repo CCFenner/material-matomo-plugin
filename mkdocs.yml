@@ -26,6 +26,7 @@ extra:
           note: Thanks for your feedback!
 
 plugins:
+  - search
   - material-plausible
 
 markdown_extensions:
