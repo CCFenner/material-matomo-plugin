@@ -1,38 +1,36 @@
 # Plausible Analytics for Material
 
-Plausible Analytics is a simple, open-source, lightweight and privacy-friendly
-web analytics alternative to Google Analytics.
+This is forked from [notpushkin/material-plausible-plugin](https://gitlab.com/notpushkin/material-plausible-plugin).
 
-This plugin implements Plausible Analytics support in Material for MkDocs.
+🚧 work in progress 🚧
 
-[Live demo](https://plausible.aedge.dev/material-plausible-plugin.ale.sh/)
+Matomo is an open-source and privacy-friendly web analytics alternative to Google Analytics.
 
+This plugin implements Matomo support in Material for MkDocs.
 
 ## Quick start
 
 1. Install the plugin:
 
     ```sh
-    pip install material-plausible-plugin
+    pip install material-matomo-plugin
     ```
-
 
 2. Add the following lines to `mkdocs.yml`:
 
     ```yaml
     plugins:
-      - material-plausible
+      - material-matomo
 
     extra:
       analytics:
-        provider: plausible
+        provider: matomo
         domain: example.com
 
         #: If using custom domain proxy or self-hosting Plausible,
         #: uncomment and specify script path here:
         # src: "https://plausible.example.com/js/plausible.js"
     ```
-
 
 ### Feedback widget
 
@@ -70,7 +68,6 @@ Ratings will be shown in the **Goal Conversions** section at the very bottom of 
 
 You can click on a specific “goal” to filter your dashboard by it. For example, if you filter by the `Feedback: bad` goal, you can see which pages need the most attention in the **Top Pages** section.
 
-
 ### Site search
 
 You can track site search usage, too. Enable the `search` plugin, then in the
@@ -78,7 +75,6 @@ You can track site search usage, too. Enable the `search` plugin, then in the
 can click it in the goals list to see what terms your users are searching for:
 
 <img width="444" alt="image" src="/images/goal-search.png" alt="Search goal expanded">
-
 
 ## License
 
